@@ -36,9 +36,15 @@ public class Student {
 
     @Override
     public int hashCode() {
-        // this method return hascode value  of a class based upon the instance variables value.
-        //this method is also used to compare different object of same class type based upon their instance variable value
-        // the hascode value of two class will only be equal if all instance variable values of one class is equal to all th instance variable values  of comparing object. 
+        /**
+         * this method return hascode value of a class based upon the instance
+         * variables value. this method is also used to compare different object
+         * of same class type based upon their instance variable value the
+         * hascode value of two class will only be equal if all instance
+         * variable values of one class is equal to all th instance variable
+         * values of comparing object.
+         */
+
         int hash = 7;
         //Because model attribyte is string it generates a hashcode to it and add to hash value.
         hash = 37 * hash + this.id;
@@ -48,18 +54,25 @@ public class Student {
     }
 
     @Override
-    //Here I have declared equals method which is used to compares parameter passed object with calling object and compares based upon all the instance variable s1,s4 both the classes .
-    //since Object obj is super class for all the classes we can declare it in parameter where passed instance implicity converted Object type
-    //This method return boolean value true  if every instance attribute value are equal in both the instances.
+    /**
+     * Here I have declared equals method which is used to compares parameter
+     * passed object with calling object and compares based upon all the
+     * instance variable s1,s4 both the classes. since Object obj is super class
+     * for all the classes we can declare it in parameter where passed instance
+     * implicity converted Object type This method return boolean value true if
+     * every instance attribute value are equal in both the instances.
+     */
     public boolean equals(Object obj) {
         // checking if both the object references are 
         // referring to the same object.
         if (this == obj) {
             return true;
         }
-        // it checks if the argument is of the 
-        // type Student by comparing the classes 
-        // of the passed argument and this object.
+        /**
+         * it checks if the argument is of the type Student by comparing the
+         * classes of the passed argument and this object.
+         */
+
         if (obj == null) {
             return false;
         }

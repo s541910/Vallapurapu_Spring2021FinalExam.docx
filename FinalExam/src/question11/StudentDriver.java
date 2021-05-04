@@ -13,8 +13,7 @@ public class StudentDriver {
 
     public static void main(String[] args) {
         System.out.println("Answe for question 11: Ramu Vallapurapu");
-        //Here in the main method we decalred four guitar object wheich later used for comparing
-        //We can see that both g1,g4 object have same instance variable values.
+
         StudentWithoutEquals swoe = new StudentWithoutEquals(1, "WaterBottle");
         StudentWithoutEquals swoe1 = new StudentWithoutEquals(1, "WaterBottle");
 
@@ -64,7 +63,7 @@ public class StudentDriver {
         System.out.println(s1.hashCode() == s3.hashCode());
 
         System.out.println("***** address of s1 and s4 *******");
-        //we are also checked the address of g1,g4 to check whether there refer to same location 
+        //we are also checked the address of s1,s4 to check whether there refer to same location 
         System.out.println(Integer.toHexString(System.identityHashCode(s1)));
         System.out.println(Integer.toHexString(System.identityHashCode(s4)));
 
